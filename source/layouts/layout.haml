@@ -9,7 +9,7 @@
     %meta(http-equiv="x-ua-compatible" content="ie=edge,chrome=1")
     %meta(name="description" content="")
     %meta(name="author" content="")
-    %meta{content: "initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width", name: "viewport"}
+    %meta{content: 'initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width', name: 'viewport'}
     %meta(name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)")
     %meta(name='apple-mobile-web-app-capable' content='yes')
     %meta(name='apple-mobile-web-app-status-bar-style' content='translucent-black')
@@ -19,7 +19,12 @@
     %link(rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/apple-touch-icon-57x57-precomposed.png")
     %link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72-precomposed.png")
     %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114-precomposed.png")
-    = stylesheet_link_tag 'application'
+
+    / Stylesheets (Don't change include order)
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin-ext',
+                          'application',
+                          '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css'
+
 
     = yield_content :head
 
@@ -28,9 +33,9 @@
       = yield
 
     / Javascripts
-    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'
-    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
-    = javascript_include_tag 'application'
+    = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
+                             '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js',
+                             'application'
 
     / Google Analytics
     = partial 'partials/trackers'

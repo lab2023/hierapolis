@@ -20,6 +20,10 @@ compass_config do |config|
   config.javascripts_dir = 'assets/javascripts'
 end
 
+# Cache Buster
+#activate :asset_hash
+activate :cache_buster
+
 ###
 # Page options, layouts, aliases and proxies
 ###
