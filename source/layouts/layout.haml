@@ -21,11 +21,8 @@
     %link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114-precomposed.png")
 
     / Stylesheets (Don't change include order)
-    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin-ext',
-                          'application',
+    = stylesheet_link_tag 'application',
                           '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css'
-
-
     = yield_content :head
 
   %body{class: @body_class || 'page'}
@@ -34,6 +31,7 @@
 
     / Javascripts
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
+                             '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js',
                              '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js',
                              'application'
 
