@@ -4,6 +4,8 @@ This is yet an other private admin template which base on Twitter Bootstrap with
 
 **Hierapolis** Hierapolis (Greek: Ἱεράπολις 'sacred city') was an ancient Greco-Roman city in Phrygia located on hot springs in southwest Anatolia. Its ruins are adjacent to modern Pamukkale, Turkey.
 
+NOTE: Don't use this theme until v1.0.0
+
 ## Requirements
 
 TODO
@@ -14,7 +16,7 @@ TODO
 
 ## What Hierapolis included?
 
-* [Bootstrap](http://twitter.github.com/bootstrap/)
+* [Bootstrap 3](http://twitter.github.com/bootstrap/)
 
 ## Bugs and  Feedback
 
