@@ -44,4 +44,4 @@ The names and logos for lab2023 are trademarks of lab2023, inc.
 
 ## License
 
-Copyright 2012 lab2023 – internet technologies
+Copyright 2013 lab2023 – internet technologies
