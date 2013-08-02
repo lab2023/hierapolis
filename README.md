@@ -1,6 +1,6 @@
 # Hierapolis
 
-This is yet an other private admin template which base on Twitter Bootstrap with Sass.
+This is yet an other private admin template which base on Twitter Bootstrap 3 with Sass and Compass.
 
 **Hierapolis** Hierapolis (Greek: Ἱεράπολις 'sacred city') was an ancient Greco-Roman city in Phrygia located on hot springs in southwest Anatolia. Its ruins are adjacent to modern Pamukkale, Turkey.
 
@@ -16,7 +16,7 @@ TODO
 
 ## What Hierapolis included?
 
-* [Bootstrap 3](http://twitter.github.com/bootstrap/)
+* [Bootstrap 3](http://getbootstrap.com/)
 
 ## Bugs and  Feedback
 
@@ -38,7 +38,7 @@ Once you've made your great commits:
 
 Hierapolis is maintained and funded by [lab2023 - internet technologies](http://lab2023.com/)
 
-Thank you to all the [contributors!](https://github.com/lab2023/hierapolis/graphs/contributors)
+Thank you to all the [contributors!](https://github.com/kebab-project/hierapolis/graphs/contributors)
 
 The names and logos for lab2023 are trademarks of lab2023, inc.
 
