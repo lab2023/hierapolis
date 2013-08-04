@@ -26,8 +26,40 @@
     = yield_content :head
 
   %body{class: @body_class || 'page'}
-    .container{ role: 'main' }
+
+    / Navbar
+    = partial 'partials/navbar'
+    / Sidebar
+
+    #sidebar
+      #dock
+        .launcher.active
+          %i.icon-dashboard
+          %a{href: '#'} Dashboard
+        .launcher
+          %i.icon-user
+          %a{href: '#'} Users
+        .launcher
+          %i.icon-flag
+          %a{href: '#'} Reports
+        .launcher
+          %i.icon-camera-retro
+          %a{href: '#'} Photos
+        .launcher
+          %i.icon-bookmark
+          %a{href: '#'} Bookmarks
+        .launcher
+          %i.icon-cloud
+          %a{href: '#'} Backup
+        .launcher
+          %i.icon-bug
+          %a{href: '#'} Feedback
+
+    / Content
+    #content
+      = partial 'partials/breadcrumb'
       = yield
+
 
     / Javascripts
     = javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
@@ -37,4 +69,3 @@
 
     / Google Analytics
     = partial 'partials/trackers'
-
