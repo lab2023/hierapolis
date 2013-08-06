@@ -3,24 +3,37 @@
 @import 'mixins'
 @import 'bootstrap'
 
+
 body.main
-  padding: 10px
+  padding: 5px
   background-color: $body-bg-primary
   //+background-image(linear-gradient(left, $body-bg-primary, $body-bg-secondary))
 
 .navbar-brand
   font-size: 1.6em
 
-#content, #sidebar
-  z-index: 1030
+#outer-wrapper
   position: absolute
-  top: 70px
+  top: 60px
   bottom: 0
   left: 20px
   right: 20px
+  border: 1px solid rgba(0,0,0, .2)
+  +border-top-left-radius($wrapper-corner-width)
+  +border-top-right-radius($wrapper-corner-width)
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
+  -moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
+
+#content, #sidebar
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
 
 #sidebar
-  +border-top-left-radius(10px)
+  +border-top-left-radius($wrapper-corner-width)
   background-color: $sidebar-bg
   width: $sidebar-width
 
@@ -43,12 +56,17 @@ body.main
           +animate-property(font-size, $animation-duration, ease-in-out)
           +animate-property(color, $animation-duration, ease-in-out)
           color: $dock-active-icon-color
+      &.active
+        &:after
+          display: none
+          // TODO content: "\f0da"
+
 
 #content
-  +border-top-right-radius(10px)
+  +border-top-right-radius($wrapper-corner-width)
   background-color: $body-bg
-  padding: 10px
-  left: $sidebar-width + 20
+  padding: 20px
+  left: $sidebar-width
 
 #toolbar
   position: relative

@@ -2,20 +2,23 @@
 
 // Globals
 $base-color: $turquoise
+$base-dark-color: $midnight-blue
 
 $body-bg-primary: $silver
 $body-bg-secondary: $asbestos
 
-$sidebar-width: 80px
-$sidebar-bg: $midnight-blue
+$wrapper-corner-width: 15px
+$sidebar-width: 85px
+$sidebar-bg: $base-dark-color
 
-
-$dock-bg: $midnight-blue
+$dock-bg: $sidebar-bg
 $dock-active-icon-color: $base-color
 
 $animation-duration: .4s
 
 // Bootstrap Overrides
+
+$brand-primary: $base-color
 
 $navbar-bg: rgba(0,0,0,0)
 $navbar-brand-color: $midnight-blue
@@ -24,4 +27,7 @@ $navbar-brand-hover-color: $wet-asphalt
 $breadcrumb-bg: $clouds
 $panel-heading-bg: $clouds
 
-$link-color: $base-color
+$dropdown-bg: $sidebar-bg
+$dropdown-border: darken($dropdown-bg, 10) !default
+$dropdown-divider-bg: $dropdown-border
+$dropdown-link-color: $clouds !default

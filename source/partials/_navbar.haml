@@ -1,10 +1,23 @@
 .navbar
-  %a.navbar-brand{:href => "#"}
+  %a.navbar-brand{:href => '#'}
     %i.icon-beer
     Hierapolis
   %ul.nav.navbar-nav.pull-right
-    %li.active
-      .navbar-text
+    %li
+      %a Hello
+    %li
+      %a World
+    %li.dropdown.user
+      %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
         %strong John DOE
-        =image_tag 'http://lorempixel.com/30/30/nature', class: 'img-circle'
-      %a{:href => "#"} Home
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          %a{:href => '#'} Action
+        %li
+          %a{:href => '#'} Another action
+        %li
+          %a{:href => '#'} Something else here
+        %li.divider
+        %li
+          %a{:href => '#'} Separated link
