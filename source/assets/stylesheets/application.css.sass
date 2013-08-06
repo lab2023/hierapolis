@@ -24,6 +24,7 @@ body.main
   -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
   -moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
+  overflow: hidden
 
 #content, #sidebar
   position: absolute
@@ -33,16 +34,16 @@ body.main
   right: 0
 
 #sidebar
-  +border-top-left-radius($wrapper-corner-width)
   background-color: $sidebar-bg
   width: $sidebar-width
+  z-index: 1
 
   #dock
     width: $sidebar-width
     text-align: center
     color: $clouds
     .launcher
-      margin-top: 10px
+      margin-top: 15px
       cursor: pointer
       i
         display: block
@@ -57,13 +58,16 @@ body.main
           +animate-property(color, $animation-duration, ease-in-out)
           color: $dock-active-icon-color
       &.active
-        &:after
-          display: none
-          // TODO content: "\f0da"
+        &:before
+          content: ""
+          background: $dock-active-icon-color
+          position: absolute
+          height: 55px
+          right: -2px
+          width: 4px
 
 
 #content
-  +border-top-right-radius($wrapper-corner-width)
   background-color: $body-bg
   padding: 20px
   left: $sidebar-width
