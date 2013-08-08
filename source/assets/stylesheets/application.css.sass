@@ -26,13 +26,16 @@ body.main
 .navbar-brand
   font-size: 1.6em
 
+.sprite-image
+  background-image: url("../images/sprite.png")
+
 #outer-wrapper
   position: absolute
   top: 60px
   bottom: 0
   left: 20px
   right: 20px
-  border: 1px solid rgba(0,0,0, .2)
+  border: 1px solid rgba(0,0,0, .15)
   +border-top-left-radius($wrapper-corner-width)
   +border-top-right-radius($wrapper-corner-width)
   -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
@@ -51,7 +54,6 @@ body.main
   background-color: $sidebar-bg
   width: $sidebar-width
   z-index: 1
-
   ul#dock
     margin: 0 0 0 0
     padding: 0
@@ -116,7 +118,22 @@ body.main
   background-color: $body-bg
   padding: 20px
   left: $sidebar-width
+  .breadcrumb
+    +border-radius(0)
+    padding: 10px 20px
+    margin: -20px -20px 20px -20px
 
 #toolbar
   position: relative
   top: 10px
+
+#beaker
+  @extend .sprite-image
+  position: absolute
+  bottom: 5px
+  background-position: 0 0
+  width: 12px
+  height: 24px
+  background-size: 100px
+  background-repeat: no-repeat
+  margin-left: 33px
