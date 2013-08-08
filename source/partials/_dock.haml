@@ -1,0 +1,30 @@
+%ul#dock
+  %li.launcher.active
+    %i.icon-dashboard
+    %a{href: '#'} Dashboard
+  %li.launcher
+    %i.icon-user
+    %a{href: '#'} Users
+  %li.launcher.dropdown.hover
+    %i.icon-flag.dropdown-toggle{'data-toggle'=>'dropdown'}
+    %a{href: '#'} Reports
+    %ul.dropdown-menu
+      %li.dropdown-header Reports
+      %li
+        %a{:href => '#', :tabindex => '-1'} Action
+      %li
+        %a{:href => '#', :tabindex => '-1'} Another action
+      %li
+        %a{:href => '#', :tabindex => '-1'} Something else here
+  %li.launcher
+    %i.icon-camera-retro
+    %a{href: '#'} Photos
+  %li.launcher
+    %i.icon-bookmark
+    %a{href: '#'} Bookmarks
+  %li.launcher
+    %i.icon-cloud
+    %a{href: '#'} Backup
+  %li.launcher
+    %i.icon-bug
+    %a{href: '#'} Feedback

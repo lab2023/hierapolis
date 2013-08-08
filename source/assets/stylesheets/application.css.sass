@@ -3,6 +3,20 @@
 @import 'mixins'
 @import 'bootstrap'
 
+// Bootstrap overrides
+.navbar-nav > li > .dropdown-menu
+  margin-top: -10px
+  +border-radius(5px)
+  &:after
+    content: ''
+    display: inline-block
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-bottom: 6px solid $dropdown-bg
+    position: absolute
+    top: -6px
+    right: 20px
+
 
 body.main
   padding: 5px
@@ -38,33 +52,64 @@ body.main
   width: $sidebar-width
   z-index: 1
 
-  #dock
+  ul#dock
+    margin: 0 0 0 0
+    padding: 0
     width: $sidebar-width
     text-align: center
     color: $clouds
-    .launcher
+    border-right: 1px solid $dropdown-border
+    li.launcher
+      list-style: none
       margin-top: 15px
       cursor: pointer
-      i
+      > i
         display: block
         font-size: 2.5em
-      a
+        margin-bottom: -2px
+      > a
         text-decoration: none
         color: $clouds
-        font-size: .7em
+        font-size: $dock-link-font-size
+      ul.dropdown-menu
+        border-left-width: 0
+        text-align: left
+        position: absolute
+        margin-left: 82px
+        top: 80px
+        > li > a
+          padding: 5px 20px
+        li.dropdown-header
+          +border-radius(4px)
+          background-color: $dropdown-border
+          color: $dock-active-icon-color
+          margin-top: -5px
+          padding: 5px 20px
+          &:before
+            +rotate(45deg)
+            position: absolute
+            margin-top: 5px
+            margin-left: -25px
+            width: 10px
+            height: 10px
+            background-color: $dropdown-border
+            content: " "
+            display: inline-block
+
       &:hover, &.active
-        i, a
-          +animate-property(font-size, $animation-duration, ease-in-out)
+        > i, > a
           +animate-property(color, $animation-duration, ease-in-out)
           color: $dock-active-icon-color
-      &.active
         &:before
-          content: ""
-          background: $dock-active-icon-color
+          +rotate(45deg)
+          content: ''
+          display: inline-block
+          width: 10px
+          height: 10px
+          background-color: white
           position: absolute
-          height: 55px
-          right: -2px
-          width: 4px
+          right: -5px
+          margin-top: 22px
 
 
 #content

@@ -34,28 +34,7 @@
     #outer-wrapper
 
       #sidebar
-        #dock
-          .launcher.active
-            %i.icon-dashboard
-            %a{href: '#'} Dashboard
-          .launcher
-            %i.icon-user
-            %a{href: '#'} Users
-          .launcher
-            %i.icon-flag
-            %a{href: '#'} Reports
-          .launcher
-            %i.icon-camera-retro
-            %a{href: '#'} Photos
-          .launcher
-            %i.icon-bookmark
-            %a{href: '#'} Bookmarks
-          .launcher
-            %i.icon-cloud
-            %a{href: '#'} Backup
-          .launcher
-            %i.icon-bug
-            %a{href: '#'} Feedback
+        = partial 'partials/dock'
 
       / Content
       #content
