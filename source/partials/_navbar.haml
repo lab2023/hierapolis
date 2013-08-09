@@ -1,15 +1,32 @@
-.navbar
+#navbar.navbar
   %a.navbar-brand{:href => '#'}
     %i.icon-beer
     Hierapolis
   %ul.nav.navbar-nav.pull-right
+    %li.dropdown
+      %a.dropdown-toggle{data: {toggle: 'dropdown'}, :href => '#'}
+        %i.icon-envelope
+        Messages
+        %span.badge 5
+        %b.caret
+      %ul.dropdown-menu
+        %li
+          %a{:href => '#'} New message
+        %li
+          %a{:href => '#'} Inbox
+        %li
+          %a{:href => '#'} Out box
+        %li
+          %a{:href => '#'} Trash
     %li
-      %a Hello
-    %li
-      %a World
-    %li.dropdown.hover.user
+      %a{href: '#'}
+        %i.icon-cog
+        Settings
+    %li.dropdown.user
       %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
+        %i.icon-user
         %strong John DOE
+        =image_tag 'http://placehold.it/20x20/777', class: 'img-rounded'
         %b.caret
       %ul.dropdown-menu
         %li

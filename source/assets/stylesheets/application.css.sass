@@ -4,8 +4,7 @@
 @import 'bootstrap'
 
 // Bootstrap overrides
-.navbar-nav > li > .dropdown-menu
-  margin-top: -10px
+.navbar-nav > li > .dropdown-menu // Add arrow and border radius from dropdowns
   +border-radius(5px)
   &:after
     content: ''
@@ -16,31 +15,45 @@
     position: absolute
     top: -6px
     right: 20px
-
+.panel // Remove box shadow from panels
+  +box-shadow(none)
 
 body.main
-  padding: 5px
+  padding: 15px
   background-color: $body-bg-primary
   //+background-image(linear-gradient(left, $body-bg-primary, $body-bg-secondary))
 
-.navbar-brand
-  font-size: 1.6em
-
 .sprite-image
-  background-image: url("../images/sprite.png")
+  background-image: url(../images/sprite.png)
+
+#navbar
+  .navbar-brand
+    font-size: $brand-font-size
+  .nav > li > a
+    padding: 15px 10px
+  .navbar-nav > li > .dropdown-menu
+    margin-top: -10px
+  li.dropdown.user img
+    margin: -2px 5px 0 5px
+    width: 20px
+    height: 20px
+    border: 1px solid
+    padding: 1px
+    background-color: rgba(white, .6)
 
 #outer-wrapper
   position: absolute
-  top: 60px
+  top: 70px
   bottom: 0
   left: 20px
   right: 20px
-  border: 1px solid rgba(0,0,0, .15)
+  border: 1px solid rgba(black, .15)
   +border-top-left-radius($wrapper-corner-width)
   +border-top-right-radius($wrapper-corner-width)
-  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
-  -moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03)
+  // TODO use compass
+  -webkit-box-shadow: 0 0 0 2px rgba(black, 0.03)
+  -moz-box-shadow: 0 0 0 2px rgba(black, 0.03)
+  box-shadow: 0 0 0 2px rgba(black, 0.03)
   overflow: hidden
 
 #content, #sidebar
@@ -54,6 +67,13 @@ body.main
   background-color: $sidebar-bg
   width: $sidebar-width
   z-index: 1
+  text-align: center
+
+  i#toggle
+    margin-top: 20px
+    display: inline-block
+    color: lighten($base-dark-color, 10)
+
   ul#dock
     margin: 0 0 0 0
     padding: 0
@@ -74,30 +94,35 @@ body.main
         color: $clouds
         font-size: $dock-link-font-size
       ul.dropdown-menu
+        width: 180px
         border-left-width: 0
         text-align: left
         position: absolute
-        margin-left: 82px
+        margin-left: 85px
         top: 80px
         > li > a
           padding: 5px 20px
+        a, li.dropdown-header
+          display: inline-block
+          width: 100%
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
         li.dropdown-header
           +border-radius(4px)
-          background-color: $dropdown-border
           color: $dock-active-icon-color
           margin-top: -5px
           padding: 5px 20px
           &:before
             +rotate(45deg)
             position: absolute
-            margin-top: 5px
+            margin-top: 4px
             margin-left: -25px
             width: 10px
             height: 10px
-            background-color: $dropdown-border
+            background-color: $dock-bg
             content: " "
             display: inline-block
-
       &:hover, &.active
         > i, > a
           +animate-property(color, $animation-duration, ease-in-out)
@@ -113,19 +138,56 @@ body.main
           right: -5px
           margin-top: 22px
 
-
 #content
   background-color: $body-bg
   padding: 20px
   left: $sidebar-width
-  .breadcrumb
-    +border-radius(0)
-    padding: 10px 20px
-    margin: -20px -20px 20px -20px
 
-#toolbar
-  position: relative
-  top: 10px
+  #breadcrumb
+    font-weight: 800
+    +border-radius(0)
+    padding: 20px
+    margin: -20px -20px 20px -20px
+    border-bottom: 1px solid #ddd
+
+  #toolbar
+    position: relative
+    top: -68px
+    float: right
+    /* TODO Choice
+      +border-top-left-radius(10px)
+      +border-top-right-radius(10px)
+      position: relative
+      top: -68px
+      float: right
+      background: white
+      height: 50px
+      padding: 8px
+      left: 9px
+      border-bottom: 0
+      border: 1px solid #ddd
+      border-bottom: 0
+    .btn-group
+      float: right
+      display: inline-block
+      button
+        height: 37px
+        @extend .btn-success
+        span.badge
+          background-color: $base-dark-color
+          padding: 3px 5px
+          font-size: .7em
+          font-weight: 200
+    .label
+      display: inline-block
+      float: right
+      margin-right: 5px
+      margin-top: 7px
+      padding: 5px
+      height: 23px
+      font-size: 0.9em
+      font-weight: 200
+
 
 #beaker
   @extend .sprite-image

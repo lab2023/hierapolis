@@ -1,24 +1,26 @@
+%i#toggle.icon-align-justify.icon-large
+
 %ul#dock
   %li.launcher.active
     %i.icon-dashboard
     %a{href: '#'} Dashboard
   %li.launcher
     %i.icon-user
-    %a{href: '#'} Users
+    %a{href: '#'} Forms
   %li.launcher.dropdown.hover
-    %i.icon-flag.dropdown-toggle{'data-toggle'=>'dropdown'}
+    %i.icon-flag
     %a{href: '#'} Reports
     %ul.dropdown-menu
-      %li.dropdown-header Reports
+      %li.dropdown-header Launcher description
       %li
-        %a{:href => '#', :tabindex => '-1'} Action
+        %a{:href => '#'} Action
       %li
-        %a{:href => '#', :tabindex => '-1'} Another action
+        %a{:href => '#'} Another action
       %li
-        %a{:href => '#', :tabindex => '-1'} Something else here
+        %a{:href => '#'} Something else here
   %li.launcher
-    %i.icon-camera-retro
-    %a{href: '#'} Photos
+    %i.icon-picture
+    %a{href: '#'} Pictures
   %li.launcher
     %i.icon-bookmark
     %a{href: '#'} Bookmarks
@@ -29,4 +31,4 @@
     %i.icon-bug
     %a{href: '#'} Feedback
 
-#beaker
+#beaker{data: {toggle: 'tooltip'}, title: 'Made by lab2023'}
