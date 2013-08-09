@@ -1,12 +1,15 @@
 %i#toggle.icon-align-justify.icon-large
 
 %ul#dock
-  %li.launcher.active
+  %li.launcher{launcher_active('dashboard')}
     %i.icon-dashboard
-    %a{href: '#'} Dashboard
+    =link_to 'Dashboard', 'index.html'
+  %li.launcher{launcher_active('forms')}
+    %i.icon-file-text-alt
+    =link_to 'Forms', 'forms.html'
   %li.launcher
-    %i.icon-user
-    %a{href: '#'} Forms
+    %i.icon-table
+    %a{href: '#'} Tables
   %li.launcher.dropdown.hover
     %i.icon-flag
     %a{href: '#'} Reports
@@ -18,9 +21,6 @@
         %a{:href => '#'} Another action
       %li
         %a{:href => '#'} Something else here
-  %li.launcher
-    %i.icon-picture
-    %a{href: '#'} Pictures
   %li.launcher
     %i.icon-bookmark
     %a{href: '#'} Bookmarks

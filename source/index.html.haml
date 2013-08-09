@@ -1,8 +1,26 @@
-- @title = '## HIERAPOLIS ##'
-- @body_class = 'main'
+- page 'Dashboard', 'dashboard'
 
 .panel
   .panel-heading
     %i.icon-beer.icon-large
     Hierapolis Rocks!
-  Lorem ipsum
+  .panel-tools
+    .btn-group
+      %a.btn{href: '#'}
+        %i.icon-wrench
+        Settings
+      %a.btn{href: '#'}
+        %i.icon-filter
+        Filters
+      %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Reload'}
+        %i.icon-refresh
+      %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Toggle'}
+        %i.icon-chevron-down
+    .badge 3 record
+  .panel-body
+    Lorem ipsum
+
+    %a.btn.btn-default{:href => "#"} Link
+    %button.btn.btn-default{:type => "submit"} Button
+    %input.btn.btn-default{:type => "button", :value => "Input"}/
+    %input.btn.btn-default{:type => "submit", :value => "Submit"}/

@@ -16,13 +16,13 @@ $(document).ready ->
 
   # Dock dropdown fix
   $('#dock li.launcher').each ->
-    $(this).find('.dropdown-menu').css 'top', $(this).position().top + 23
+    $(this).find('.dropdown-menu').css 'top', $(this).position().top + 33
 
   $('#toggle').click ->
     $('#dock .launcher a').toggle()
     $('#dock li.launcher').each ->
-      $(this).find('.dropdown-menu').css 'top', $(this).position().top + 23
+      $(this).find('.dropdown-menu').css 'top', $(this).position().top + 33
 
   # Enable toolbar tooltips
-  $('#toolbar [title]').tooltip
+  $('[data-toggle=toolbar-tooltip]').tooltip
     placement: 'bottom'

@@ -18,6 +18,41 @@
 .panel // Remove box shadow from panels
   +box-shadow(none)
 
+  // Panel heading styles
+  .panel-heading
+    color: $base-dark-color
+    i[class*='icon-']
+      margin-right: 10px
+  .panel-tools
+    float: right
+    margin-top: -48px
+    margin-right: -8px
+    .btn-group
+      margin-top: -6px
+    .btn-group, .label, .badge
+      float: right
+      display: inline-block
+    .btn
+      padding: 8px 6px
+      font-weight: 200
+      font-size: 1em
+      color: $base-dark-color
+      &:hover
+        color: $base-color
+      &:active, &:focus
+        color: darken($base-color, 10)
+        +box-shadow(none)
+      span.badge
+        font-size: .7em
+        padding: 2px 4px
+    .label, .badge
+      margin-right: 5px
+      margin-top: 4px
+      padding-bottom: 4px
+      font-weight: 200
+  .panel-body
+    clear: both
+
 body.main
   padding: 15px
   background-color: $body-bg-primary
@@ -32,7 +67,7 @@ body.main
   .nav > li > a
     padding: 15px 10px
   .navbar-nav > li > .dropdown-menu
-    margin-top: -10px
+    margin-top: -5px
   li.dropdown.user img
     margin: -2px 5px 0 5px
     width: 20px
@@ -75,7 +110,7 @@ body.main
     color: lighten($base-dark-color, 10)
 
   ul#dock
-    margin: 0 0 0 0
+    margin: -15px 0 0 0
     padding: 0
     width: $sidebar-width
     text-align: center
@@ -83,13 +118,18 @@ body.main
     border-right: 1px solid $dropdown-border
     li.launcher
       list-style: none
-      margin-top: 15px
+      margin-top: 25px
       cursor: pointer
       > i
         display: block
         font-size: 2.5em
         margin-bottom: -2px
       > a
+        height: 36px
+        display: block
+        position: relative
+        padding-top: 36px
+        margin-top: -36px
         text-decoration: none
         color: $clouds
         font-size: $dock-link-font-size
@@ -167,10 +207,11 @@ body.main
       border-bottom: 0
       border: 1px solid #ddd
       border-bottom: 0
-    .btn-group
+    .btn-group, .label, form
       float: right
       display: inline-block
-      button
+    .btn-group
+      .btn
         height: 37px
         @extend .btn-success
         span.badge
@@ -179,8 +220,6 @@ body.main
           font-size: .7em
           font-weight: 200
     .label
-      display: inline-block
-      float: right
       margin-right: 5px
       margin-top: 7px
       padding: 5px
