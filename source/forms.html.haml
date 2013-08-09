@@ -1,0 +1,46 @@
+- page 'Forms', 'forms'
+
+.panel
+  .panel-heading
+    %i.icon-edit.icon-large
+    Form Default
+  .panel-body
+
+    %form
+      %fieldset
+        %legend Legend
+        .form-group
+          %label{:for => "exampleInputEmail"} Email address
+          %input#exampleInputEmail.form-control{:placeholder => "Enter email", :type => "text"}/
+        .form-group.has-error
+          %label{:for => "exampleInputPassword"} Password
+          %input#exampleInputPassword.form-control{:placeholder => "Password", :type => "password"}/
+          %p.help-block Example block-level help text here.
+        .form-group
+          %label{:for => "exampleInputFile"} File input
+          %input#exampleInputFile{:type => "file"}/
+          %p.help-block Example block-level help text here.
+        %button.btn.btn-default{:type => "submit"} Submit
+
+.panel
+  .panel-heading
+    %i.icon-edit.icon-large
+    Form Horizontal
+  .panel-body
+
+    %form.form-horizontal
+
+      .form-group.has-warning
+        %label.col-lg-2.control-label{for: 'inputEmail'} Email
+        .col-lg-10
+          %input#inputEmail.form-control{placeholder: 'Email', type: 'text'}/
+
+      .form-group.has-error
+        %label.col-lg-2.control-label{for: 'inputPassword'} Password
+        .col-lg-10
+          %input#inputPassword.form-control{placeholder: 'Password', type: 'password'}/
+
+      .form-group
+        .col-lg-12
+          %button.btn.btn-default{type: 'submit'} Sign in
+

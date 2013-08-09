@@ -2,56 +2,7 @@
 @import 'variables'
 @import 'mixins'
 @import 'bootstrap'
-
-// Bootstrap overrides
-.navbar-nav > li > .dropdown-menu // Add arrow and border radius from dropdowns
-  +border-radius(5px)
-  &:after
-    content: ''
-    display: inline-block
-    border-left: 6px solid transparent
-    border-right: 6px solid transparent
-    border-bottom: 6px solid $dropdown-bg
-    position: absolute
-    top: -6px
-    right: 20px
-.panel // Remove box shadow from panels
-  +box-shadow(none)
-
-  // Panel heading styles
-  .panel-heading
-    color: $base-dark-color
-    i[class*='icon-']
-      margin-right: 10px
-  .panel-tools
-    float: right
-    margin-top: -48px
-    margin-right: -8px
-    .btn-group
-      margin-top: -6px
-    .btn-group, .label, .badge
-      float: right
-      display: inline-block
-    .btn
-      padding: 8px 6px
-      font-weight: 200
-      font-size: 1em
-      color: $base-dark-color
-      &:hover
-        color: $base-color
-      &:active, &:focus
-        color: darken($base-color, 10)
-        +box-shadow(none)
-      span.badge
-        font-size: .7em
-        padding: 2px 4px
-    .label, .badge
-      margin-right: 5px
-      margin-top: 4px
-      padding-bottom: 4px
-      font-weight: 200
-  .panel-body
-    clear: both
+@import 'bootstrap_overrides'
 
 body.main
   padding: 15px
@@ -212,7 +163,6 @@ body.main
       display: inline-block
     .btn-group
       .btn
-        height: 37px
         @extend .btn-success
         span.badge
           background-color: $base-dark-color
@@ -221,7 +171,7 @@ body.main
           font-weight: 200
     .label
       margin-right: 5px
-      margin-top: 7px
+      margin-top: 6px
       padding: 5px
       height: 23px
       font-size: 0.9em
