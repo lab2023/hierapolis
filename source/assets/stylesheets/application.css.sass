@@ -5,7 +5,7 @@
 @import 'bootstrap_overrides'
 
 body.main
-  padding: 15px
+  padding: 10px 20px 0px 20px
   background-color: $body-bg-primary
   //+background-image(linear-gradient(left, $body-bg-primary, $body-bg-secondary))
 
@@ -27,7 +27,7 @@ body.main
     padding: 1px
     background-color: rgba(white, .6)
 
-#outer-wrapper
+#wrapper
   position: absolute
   top: 70px
   bottom: 0
@@ -130,53 +130,46 @@ body.main
           margin-top: 22px
 
 #content
+  overflow: auto
+  margin-top: 50px
   background-color: $body-bg
   padding: 20px
   left: $sidebar-width
 
+#tools
+  margin-left: 80px
+
   #breadcrumb
     font-weight: 800
     +border-radius(0)
-    padding: 20px
-    margin: -20px -20px 20px -20px
+    padding: 15px 20px 15px 20px
     border-bottom: 1px solid #ddd
 
   #toolbar
-    position: relative
-    top: -68px
+    margin-top: -70px
+    margin-right: 10px
     float: right
-    /* TODO Choice
-      +border-top-left-radius(10px)
-      +border-top-right-radius(10px)
-      position: relative
-      top: -68px
-      float: right
-      background: white
-      height: 50px
-      padding: 8px
-      left: 9px
-      border-bottom: 0
-      border: 1px solid #ddd
-      border-bottom: 0
-    .btn-group, .label, form
-      float: right
-      display: inline-block
-    .btn-group
-      .btn
-        @extend .btn-success
-        span.badge
-          background-color: $base-dark-color
-          padding: 3px 5px
-          font-size: .7em
-          font-weight: 200
-    .label
-      margin-right: 5px
-      margin-top: 6px
-      padding: 5px
-      height: 23px
-      font-size: 0.9em
-      font-weight: 200
-
+    height: 50px
+    padding: 8px
+    border-bottom: 0
+  .btn-group, .label, form
+    float: right
+    display: inline-block
+  .btn-group
+    .btn
+      @extend .btn-success
+      span.badge
+        background-color: $base-dark-color
+        padding: 3px 5px
+        font-size: .7em
+        font-weight: 200
+  .label
+    margin-right: 5px
+    margin-top: 6px
+    padding: 5px
+    height: 23px
+    font-size: 0.9em
+    font-weight: 200
 
 #beaker
   @extend .sprite-image

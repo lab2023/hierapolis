@@ -29,17 +29,20 @@
 
     / Navbar
     = partial 'partials/navbar'
-    / Sidebar
 
-    #outer-wrapper
+    #wrapper
 
-      #sidebar
+      / Sidebar
+      %section#sidebar
         = partial 'partials/dock'
+
+      / Tools
+      %section#tools
+        = partial 'partials/breadcrumb'
+        = partial 'partials/toolbar'
 
       / Content
       #content
-        = partial 'partials/breadcrumb'
-        = partial 'partials/toolbar'
         = yield
 
 
