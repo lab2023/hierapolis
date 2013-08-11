@@ -26,3 +26,6 @@ $(document).ready ->
   # Enable toolbar tooltips
   $('[data-toggle=toolbar-tooltip]').tooltip
     placement: 'bottom'
+
+  # Enable knob inputs
+  $('.knob').knob()

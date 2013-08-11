@@ -183,3 +183,12 @@
       .form-actions
         %button.btn.btn-default{:type => 'submit'} Save
         %a.btn{href: '#'} Cancel
+
+.panel
+  .panel-heading
+    %i.icon-edit.icon-large
+    Knob Inputs
+  .panel-body.text-center
+    %input.knob{type: 'text', value: '75', data: {width: 150, height: 150}}/
+    %input.knob{type: 'text', value: '100', data: {fgColor: '#16a085', width: 150, height: 150}}/
+    %input.knob{type: 'text', value: '200', data: {fgColor: '#7f8c8d', width: 150, height: 150}}/
