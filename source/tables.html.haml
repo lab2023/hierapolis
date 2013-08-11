@@ -1,8 +1,8 @@
 - page 'Tables', 'tables'
 
-.panel
+.panel.tables
   .panel-heading
-    %i.icon-edit.icon-large
+    %i.icon-table.icon-large
     Default Table
   .panel-tools
     .btn-group
@@ -15,17 +15,17 @@
       %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Reload'}
         %i.icon-refresh
     .badge 3 record
-  .panel-body.no-padding
+  .panel-body
+    .table-header.row
+      .col-lg-9
+        Per page
+      .col-lg-3
+        .input-group
+          %input.form-control{placeholder: 'Quick search...', type: 'text'}/
+          %span.input-group-btn
+            %button.btn{type: 'button'}
+              %i.icon-search
     %table.table
-      %caption.table-header
-        .col-lg-9
-          Per page
-        .col-lg-3
-          .input-group
-            %input.form-control{placeholder: 'Quick search...', type: 'text'}/
-            %span.input-group-btn
-              %button.btn{type: 'button'}
-                %i.icon-search
       %thead
         %tr
           %th #
@@ -49,11 +49,28 @@
           %td the Bird
           %td @twitter
 
+    .table-footer
+      %ul.pagination
+        %li
+          %a{:href => "#"} «
+        %li
+          %a{:href => "#"} 1
+        %li
+          %a{:href => "#"} 2
+        %li
+          %a{:href => "#"} 3
+        %li
+          %a{:href => "#"} 4
+        %li
+          %a{:href => "#"} 5
+        %li
+          %a{:href => "#"} »
+
 .row
   .col-lg-6
     .panel
       .panel-heading
-        %i.icon-edit.icon-large
+        %i.icon-table.icon-large
         Padding Table
       .panel-body
         %table.table
@@ -82,7 +99,7 @@
   .col-lg-6
     .panel
       .panel-heading
-        %i.icon-edit.icon-large
+        %i.icon-table.icon-large
         Bordered Table
       .panel-body
         %table.table.table-bordered
@@ -112,7 +129,7 @@
 
 .panel
   .panel-heading
-    %i.icon-edit.icon-large
+    %i.icon-table.icon-large
     Condensed Table
   .panel-body
     %table.table.table-condensed
