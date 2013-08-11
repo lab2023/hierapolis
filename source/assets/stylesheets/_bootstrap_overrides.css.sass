@@ -49,6 +49,11 @@
       margin-top: 4px
       padding-bottom: 4px
       font-weight: 200
+  .panel-body
+    &.no-padding
+      margin-left: -15px
+      margin-right: -15px
+      margin-top: -15px
 
 // Buttons
 .btn
@@ -56,3 +61,7 @@
 
 .radio, .checkbox
   margin-top: 0
+
+.table
+  @extend .table-striped
+  @extend .table-hover

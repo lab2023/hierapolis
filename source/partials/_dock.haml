@@ -7,9 +7,9 @@
   %li.launcher{launcher_active('forms')}
     %i.icon-file-text-alt
     =link_to 'Forms', 'forms.html'
-  %li.launcher
+  %li.launcher{launcher_active('tables')}
     %i.icon-table
-    %a{href: '#'} Tables
+    =link_to 'Tables', 'tables.html'
   %li.launcher.dropdown.hover
     %i.icon-flag
     %a{href: '#'} Reports
