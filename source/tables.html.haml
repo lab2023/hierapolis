@@ -17,6 +17,15 @@
     .badge 3 record
   .panel-body.no-padding
     %table.table
+      %caption.table-header
+        .col-lg-9
+          Per page
+        .col-lg-3
+          .input-group
+            %input.form-control{placeholder: 'Quick search...', type: 'text'}/
+            %span.input-group-btn
+              %button.btn{type: 'button'}
+                %i.icon-search
       %thead
         %tr
           %th #
@@ -41,6 +50,35 @@
           %td @twitter
 
 .row
+  .col-lg-6
+    .panel
+      .panel-heading
+        %i.icon-edit.icon-large
+        Padding Table
+      .panel-body
+        %table.table
+          %thead
+            %tr
+              %th #
+              %th First Name
+              %th Last Name
+              %th Username
+          %tbody
+            %tr
+              %td 1
+              %td Mark
+              %td Otto
+              %td @mdo
+            %tr
+              %td 2
+              %td Jacob
+              %td Thornton
+              %td @fat
+            %tr
+              %td 3
+              %td Larry
+              %td the Bird
+              %td @twitter
   .col-lg-6
     .panel
       .panel-heading
@@ -71,35 +109,6 @@
               %td the Bird
               %td @twitter
 
-  .col-lg-6
-    .panel
-      .panel-heading
-        %i.icon-edit.icon-large
-        Default Table
-      .panel-body
-        %table.table
-          %thead
-            %tr
-              %th #
-              %th First Name
-              %th Last Name
-              %th Username
-          %tbody
-            %tr
-              %td 1
-              %td Mark
-              %td Otto
-              %td @mdo
-            %tr
-              %td 2
-              %td Jacob
-              %td Thornton
-              %td @fat
-            %tr
-              %td 3
-              %td Larry
-              %td the Bird
-              %td @twitter
 
 .panel
   .panel-heading
