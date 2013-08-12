@@ -4,6 +4,42 @@
 @import 'bootstrap'
 @import 'bootstrap_overrides'
 
+body.login
+  color: $base-dark-color
+  background-color: $body-bg-primary
+  .wrapper
+    padding: 20px
+    background-color: $clouds
+    +border-radius($wrapper-corner-size)
+    +box-shadow(0 0 0 2px $box-shadow-color)
+    border: 1px solid rgba(black, .3)
+    margin: 10% auto
+    width: 300px
+    h4
+      margin: 0 0 15px 0
+      text-align: center
+    .brand
+      margin-top: -15px
+      h1
+        display: block
+        margin-bottom: 20px
+        .logo-icon
+          width: 75px
+          height: 75px
+          margin: auto
+          padding: 15px
+          border-radius: 40px
+          background: $base-dark-color
+          i[class*='icon-']
+            margin-left: -5px
+            color: $base-color
+            font-size: 140%
+    .text-center
+      .checkbox
+        text-align: center
+        input
+          float: none
+
 body.main
   padding: 10px 20px 0px 20px
   background-color: $body-bg-primary
@@ -64,7 +100,6 @@ form
         width: 15%
         padding: 5px
         .btn
-          @extend .btn-sm
           height: 25px
           padding: 2px 6px
 
@@ -89,13 +124,10 @@ form
   bottom: 0
   left: 20px
   right: 20px
-  border: 1px solid rgba(black, .15)
-  +border-top-left-radius($wrapper-corner-width)
-  +border-top-right-radius($wrapper-corner-width)
-  // TODO use compass
-  -webkit-box-shadow: 0 0 0 2px rgba(black, 0.03)
-  -moz-box-shadow: 0 0 0 2px rgba(black, 0.03)
-  box-shadow: 0 0 0 2px rgba(black, 0.03)
+  border: 1px solid rgba(black, .2)
+  +border-top-left-radius($wrapper-corner-size)
+  +border-top-right-radius($wrapper-corner-size)
+  +box-shadow(0 0 0 2px $box-shadow-color)
   overflow: hidden
 
 #content, #sidebar
@@ -194,7 +226,6 @@ form
 
 #tools
   margin-left: 80px
-  box-shadow: 0 4px 2px -2px gray
 
   #breadcrumb
     +border-radius(0)

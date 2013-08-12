@@ -26,11 +26,11 @@
       %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => '#'}
         %i.icon-user
         %strong John DOE
-        =image_tag lorem.image('300x400', color: '#777'), class: 'img-rounded'
+        =image_tag lorem.image('20x20', color: '#777'), class: 'img-rounded'
         %b.caret
       %ul.dropdown-menu
         %li
           %a{:href => '#'} Edit Profile
         %li.divider
         %li
-          %a{:href => '#'} Sign Out
+          =link_to 'Sign out', 'index.html'
