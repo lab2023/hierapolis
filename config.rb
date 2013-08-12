@@ -64,6 +64,9 @@ activate :livereload
 #   end
 # end
 
+# i18n
+activate :i18n
+
 set :fonts_dir, 'assets/fonts'
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'

@@ -1,0 +1,13 @@
+en:
+  login_heading: "Login to your account"
+  login_remember_me: "Remember me on this computer"
+  login_email: "Email address"
+  login_email_hint: "Enter your email address"
+  login_password: "Password"
+  forgot_password: "Forgot password?"
+  forgot_password_heading: "Reset your password"
+
+  sign_in: "Sign in"
+  sign_out: "Sign out"
+  send: "Send"
+  go_back: "Go back"
