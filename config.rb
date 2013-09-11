@@ -37,9 +37,10 @@ activate :cache_buster
 # page "/path/to/file.html", :layout => :otherlayout
 # 
 # A path which all have the same  layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+with_layout :login do
+   page '/index.html'
+   page '/forgot_password.html'
+end
 
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
@@ -62,6 +63,9 @@ activate :livereload
 #     "Helping"
 #   end
 # end
+
+# i18n
+activate :i18n
 
 set :fonts_dir, 'assets/fonts'
 set :css_dir, 'assets/stylesheets'

@@ -1,0 +1,34 @@
+%i#toggle.icon-align-justify.icon-large
+
+%ul#dock
+  %li.launcher{launcher_active('dashboard')}
+    %i.icon-dashboard
+    =link_to 'Dashboard', 'dashboard.html'
+  %li.launcher{launcher_active('forms')}
+    %i.icon-file-text-alt
+    =link_to 'Forms', 'forms.html'
+  %li.launcher{launcher_active('tables')}
+    %i.icon-table
+    =link_to 'Tables', 'tables.html'
+  %li.launcher.dropdown.hover
+    %i.icon-flag
+    %a{href: '#'} Reports
+    %ul.dropdown-menu
+      %li.dropdown-header Launcher description
+      %li
+        %a{:href => '#'} Action
+      %li
+        %a{:href => '#'} Another action
+      %li
+        %a{:href => '#'} Something else here
+  %li.launcher
+    %i.icon-bookmark
+    %a{href: '#'} Bookmarks
+  %li.launcher
+    %i.icon-cloud
+    %a{href: '#'} Backup
+  %li.launcher
+    %i.icon-bug
+    %a{href: '#'} Feedback
+
+#beaker{data: {toggle: 'tooltip'}, title: 'Made by lab2023'}

@@ -25,25 +25,10 @@
                           '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css'
     = yield_content :head
 
-  %body.main{class: @page || 'page'}
+  %body.login
 
-    / Navbar
-    = partial 'partials/navbar'
-
-    #wrapper
-
-      / Sidebar
-      %section#sidebar
-        = partial 'partials/dock'
-
-      / Tools
-      %section#tools
-        = partial 'partials/breadcrumb'
-        = partial 'partials/toolbar'
-
-      / Content
-      #content
-        = yield
+    .wrapper
+      = yield
 
     / Footer
     = partial 'partials/footer'
