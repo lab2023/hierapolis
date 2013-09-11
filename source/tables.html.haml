@@ -1,5 +1,17 @@
 - page 'Tables', 'tables'
 
+- content_for :toolbar do
+  .btn-group
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Building'}
+      %i.icon-building
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Laptop'}
+      %i.icon-laptop
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Calendar'}
+      %i.icon-calendar
+      %span.badge 3
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Lemon'}
+      %i.icon-lemon
+
 .panel.tables
   .panel-heading
     %i.icon-table.icon-large

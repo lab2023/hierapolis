@@ -1,5 +1,21 @@
 - page 'Dashboard', 'dashboard'
 
+- content_for :toolbar do
+  .btn-group
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Building'}
+      %i.icon-building
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Laptop'}
+      %i.icon-laptop
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Calendar'}
+      %i.icon-calendar
+      %span.badge 3
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Lemon'}
+      %i.icon-lemon
+  .label.label-danger
+    Danger
+  .label.label-info
+    Info
+
 .panel
   .panel-heading
     %i.icon-beer.icon-large
@@ -14,10 +30,10 @@
   .panel-body
     .page-header
       %h4 System usage
-      .progress
-        .progress-bar.progress-bar-success{style: 'width: 35%'}
-        .progress-bar.progress-bar-warning{style: 'width: 20%'}
-        .progress-bar.progress-bar-danger{style: 'width: 10%'}
+    .progress
+      .progress-bar.progress-bar-success{style: 'width: 35%'}
+      .progress-bar.progress-bar-warning{style: 'width: 20%'}
+      .progress-bar.progress-bar-danger{style: 'width: 10%'}
     .page-header
       %h4 User statics
     .row.text-center

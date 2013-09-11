@@ -1,15 +1,2 @@
 #toolbar
-  .btn-group
-    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Building'}
-      %i.icon-building
-    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Laptop'}
-      %i.icon-laptop
-    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Calendar'}
-      %i.icon-calendar
-      %span.badge 3
-    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Lemon'}
-      %i.icon-lemon
-  .label.label-danger
-    Danger
-  .label.label-info
-    Info
+  =yield_content :toolbar
