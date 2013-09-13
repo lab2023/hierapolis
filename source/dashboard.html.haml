@@ -1,0 +1,47 @@
+- page 'Dashboard', 'dashboard'
+
+- content_for :toolbar do
+  .btn-group
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Building'}
+      %i.icon-building
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Laptop'}
+      %i.icon-laptop
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Calendar'}
+      %i.icon-calendar
+      %span.badge 3
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Lemon'}
+      %i.icon-lemon
+  .label.label-danger
+    Danger
+  .label.label-info
+    Info
+
+.panel.panel-default
+  .panel-heading
+    %i.icon-beer.icon-large
+    Hierapolis Rocks!
+    .panel-tools
+      .btn-group
+        %a.btn{href: '#'}
+          %i.icon-refresh
+          Refresh statics
+        %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Toggle'}
+          %i.icon-chevron-down
+  .panel-body
+    .page-header
+      %h4 System usage
+    .progress
+      .progress-bar.progress-bar-success{style: 'width: 35%'}
+      .progress-bar.progress-bar-warning{style: 'width: 20%'}
+      .progress-bar.progress-bar-danger{style: 'width: 10%'}
+    .page-header
+      %h4 User statics
+    .row.text-center
+      .col-md-3
+        %input.knob.second{'data-bgcolor' => '#d4ecfd', 'data-fgcolor' => '#30a1ec', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '50'}/
+      .col-md-3
+        %input.knob.second{'data-bgcolor' => '#c4e9aa', 'data-fgcolor' => '#8ac368', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '75'}/
+      .col-md-3
+        %input.knob.second{'data-bgcolor' => '#cef3f5', 'data-fgcolor' => '#5ba0a3', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '35'}/
+      .col-md-3
+        %input.knob.second{'data-bgcolor' => '#f8d2e0', 'data-fgcolor' => '#b85e80', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '85'}/

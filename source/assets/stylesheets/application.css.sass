@@ -2,3 +2,296 @@
 @import 'variables'
 @import 'mixins'
 @import 'bootstrap'
+@import 'bootstrap_overrides'
+
+body
+  font-family: $base-font-family
+
+body.login
+  color: $base-dark-color
+  background-color: $body-bg-primary
+  .wrapper
+    padding: 20px
+    background-color: $clouds
+    +border-radius($wrapper-corner-size)
+    +box-shadow(0 0 0 2px $box-shadow-color)
+    border: 1px solid rgba(black, .3)
+    margin: 10% auto
+    width: 300px
+    .brand
+      margin-top: -15px
+      h1
+        display: block
+        margin-bottom: 20px
+        .logo-icon
+          width: 75px
+          height: 75px
+          margin: auto
+          padding: 15px
+          border-radius: 40px
+          background: $base-dark-color
+          i[class*='icon-']
+            margin-left: -5px
+            color: $base-color
+            font-size: 140%
+    .text-center
+      .checkbox
+        text-align: center
+      legend
+        text-align: center
+        input
+          float: none
+
+body.main
+  padding: 10px 20px 0px 20px
+  background-color: $body-bg-primary
+  //+background-image(linear-gradient(left, $body-bg-primary, $body-bg-secondary))
+
+.sprite-image
+  background-image: url(../images/sprite.png)
+
+form
+  .form-actions
+    background-color: lighten($panel-heading-bg, 3)
+    margin: 15px -15px -15px
+    padding: 15px
+    +border-bottom-left-radius(4px)
+    +border-bottom-right-radius(4px)
+    a.btn:hover
+      color: lighten($base-color, 10)
+
+.text-center
+  text-align: center
+
+// Panels
+.panel
+  .panel-tools
+    float: right
+    margin-top: -4px
+    margin-right: -8px
+    .btn-group
+      margin-top: -6px
+    .btn-group, .label, .badge
+      float: right
+      display: inline-block
+    .btn
+      padding: 8px 6px
+      font-weight: 200
+      font-size: 1em
+      color: $base-dark-color
+      &:hover
+        color: $base-color
+      &:active, &:focus
+        color: darken($base-color, 10)
+        +box-shadow(none)
+      span.badge
+        font-size: .7em
+        padding: 2px 4px
+    .label, .badge
+      margin-right: 5px
+      margin-top: 4px
+      padding-bottom: 4px
+      font-weight: 200
+
+// Grids
+.grid
+  .filters
+    background-color: lighten($panel-heading-bg, 5)
+    .input-group
+      input
+        height: 30px
+      button
+        height: 30px
+        padding: 0 10px
+  table
+    margin-bottom: 0
+    th:first-child, td:first-child
+      padding-left: 15px
+    tr.disabled
+      +opacity(.4)
+      td
+        text-decoration: line-through
+      td.action
+        text-decoration: none !important
+    td.action
+      width: 15%
+      padding: 5px
+      .btn
+        height: 25px
+        padding: 2px 6px
+  .panel-footer
+    padding: 10px 10px 5px 10px
+    .pagination
+      margin: 0
+
+
+#navbar
+  .navbar-brand
+    font-size: $brand-font-size
+  .nav > li > a
+    padding: 15px 10px
+  .navbar-nav > li > .dropdown-menu
+    margin-top: -5px
+  li.dropdown.user img
+    margin: -2px 5px 0 5px
+    width: 20px
+    height: 20px
+    border: 1px solid
+    padding: 1px
+    background-color: rgba(white, .6)
+
+#wrapper
+  position: absolute
+  top: 70px
+  bottom: 0
+  left: 20px
+  right: 20px
+  border: 1px solid rgba(black, .2)
+  +border-top-left-radius($wrapper-corner-size)
+  +border-top-right-radius($wrapper-corner-size)
+  +box-shadow(0 0 0 2px $box-shadow-color)
+  overflow: hidden
+
+#content, #sidebar
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+#sidebar
+  background-color: $sidebar-bg
+  width: $sidebar-width
+  z-index: 1
+  text-align: center
+
+  i#toggle
+    margin-top: 20px
+    display: inline-block
+    color: lighten($base-dark-color, 10)
+
+  ul#dock
+    margin: -15px 0 0 0
+    padding: 0
+    width: $sidebar-width
+    text-align: center
+    color: $clouds
+    border-right: 1px solid $dropdown-border
+    li.launcher
+      list-style: none
+      margin-top: 25px
+      cursor: pointer
+      > i
+        display: block
+        font-size: 2.5em
+        margin-bottom: -2px
+      > a
+        height: 36px
+        display: block
+        position: relative
+        padding-top: 36px
+        margin-top: -36px
+        text-decoration: none
+        color: $clouds
+        font-size: $dock-link-font-size
+      ul.dropdown-menu
+        width: 180px
+        border-left-width: 0
+        text-align: left
+        position: absolute
+        margin-left: 85px
+        top: 8px
+        > li > a
+          padding: 5px 20px
+        a, li.dropdown-header
+          display: inline-block
+          width: 100%
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+        li.dropdown-header
+          +border-radius(4px)
+          color: $dock-active-icon-color
+          margin-top: -5px
+          padding: 5px 20px
+          &:before
+            +rotate(45deg)
+            position: absolute
+            margin-top: 4px
+            margin-left: -25px
+            width: 10px
+            height: 10px
+            background-color: $dock-bg
+            content: " "
+            display: inline-block
+      &:hover, &.active
+        > i, > a
+          +animate-property(color, $animation-duration, ease-in-out)
+          color: $dock-active-icon-color
+        &:before
+          +rotate(45deg)
+          content: ''
+          display: inline-block
+          width: 10px
+          height: 10px
+          background-color: white
+          position: absolute
+          right: -6px
+          margin-top: 22px
+
+#content
+  overflow: auto
+  margin-top: 51px
+  background-color: $body-bg
+  padding: 20px
+  left: $sidebar-width
+
+#tools
+  margin-left: 80px
+
+  #breadcrumb
+    +border-radius(0)
+    padding: 15px 20px 15px 20px
+    border-bottom: 1px solid #ddd
+    .title
+      font-weight: 800
+      color: $base-color
+    a
+      color: darken($silver, 20)
+
+  #toolbar
+    margin-top: -70px
+    margin-right: 10px
+    float: right
+    height: 50px
+    padding: 8px
+    border-bottom: 0
+  .btn-group, .label, form
+    float: right
+    display: inline-block
+  .btn-group
+    .btn
+      @extend .btn-success
+      span.badge
+        background-color: $base-dark-color
+        padding: 3px 5px
+        font-size: .7em
+        font-weight: 200
+  .label
+    margin-right: 5px
+    margin-top: 6px
+    padding: 5px
+    height: 23px
+    font-size: 0.9em
+    font-weight: 200
+
+#beaker
+  @extend .sprite-image
+  position: absolute
+  bottom: 5px
+  background-position: 0 0
+  width: 12px
+  height: 24px
+  background-size: 100px
+  background-repeat: no-repeat
+  margin-left: 33px

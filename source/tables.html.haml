@@ -1,0 +1,285 @@
+- page 'Tables', 'tables'
+
+- content_for :toolbar do
+  .btn-group
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Building'}
+      %i.icon-building
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Laptop'}
+      %i.icon-laptop
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Calendar'}
+      %i.icon-calendar
+      %span.badge 3
+    %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Lemon'}
+      %i.icon-lemon
+
+.panel.panel-default.grid
+
+  .panel-heading
+    %i.icon-table.icon-large
+    Default Table
+
+    .panel-tools
+      .btn-group
+        %a.btn{href: '#'}
+          %i.icon-wrench
+          Settings
+        %a.btn{href: '#'}
+          %i.icon-filter
+          Filters
+        %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Reload'}
+          %i.icon-refresh
+      .badge 3 record
+
+  .panel-body.filters
+    .row
+      .col-md-9
+        Add your custom filters here...
+      .col-md-3
+        .input-group
+          %input.form-control{placeholder: 'Quick search...', type: 'text'}/
+          %span.input-group-btn
+            %button.btn{type: 'button'}
+              %i.icon-search
+
+  %table.table
+    %thead
+      %tr
+        %th #
+        %th First Name
+        %th Last Name
+        %th Username
+        %th.actions
+          Actions
+    %tbody
+      %tr.success
+        %td 1
+        %td Mark
+        %td Otto
+        %td @mdo
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr.danger
+        %td 2
+        %td Jacob
+        %td Thornton
+        %td @fat
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr.warning
+        %td 3
+        %td Larry
+        %td the Bird
+        %td @twitter
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr.active
+        %td 4
+        %td Mark
+        %td Otto
+        %td @mdo
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr.disabled
+        %td 5
+        %td Jacob
+        %td Thornton
+        %td @fat
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr
+        %td 6
+        %td Larry
+        %td the Bird
+        %td @twitter
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr
+        %td 7
+        %td Jacob
+        %td Thornton
+        %td @fat
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr
+        %td 8
+        %td Larry
+        %td the Bird
+        %td @twitter
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr
+        %td 9
+        %td Mark
+        %td Otto
+        %td @mdo
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+      %tr
+        %td 10
+        %td Jacob
+        %td Thornton
+        %td @fat
+        %td.action
+          %a.btn.btn-success{href: '#', data: {toggle: 'tooltip'}, title: 'Zoom'}
+            %i.icon-zoom-in
+          %a.btn.btn-info{href: '#'}
+            %i.icon-edit
+          %a.btn.btn-danger{href: '#'}
+            %i.icon-trash
+
+  .panel-footer
+    %ul.pagination.pagination-sm
+      %li
+        %a{:href => '#'} «
+      %li.active
+        %a{:href => '#'} 1
+      %li
+        %a{:href => '#'} 2
+      %li
+        %a{:href => '#'} 3
+      %li
+        %a{:href => '#'} 4
+      %li
+        %a{:href => '#'} 5
+      %li
+        %a{:href => '#'} 6
+      %li
+        %a{:href => '#'} 7
+      %li
+        %a{:href => '#'} 8
+      %li
+        %a{:href => '#'} »
+    .pull-right
+      Showing 1 to 10 of 32 entries
+
+.panel.panel-default.grid
+  .panel-heading
+    %i.icon-table.icon-large
+    Padding Table
+
+  %table.table
+    %thead
+      %tr
+        %th #
+        %th First Name
+        %th Last Name
+        %th Username
+    %tbody
+      %tr
+        %td 1
+        %td Mark
+        %td Otto
+        %td @mdo
+      %tr
+        %td 2
+        %td Jacob
+        %td Thornton
+        %td @fat
+      %tr
+        %td 3
+        %td Larry
+        %td the Bird
+        %td @twitter
+
+.panel.panel-default.grid
+  .panel-heading
+    %i.icon-table.icon-large
+    Bordered Table
+  .panel-body
+    %table.table.table-bordered
+      %thead
+        %tr
+          %th #
+          %th First Name
+          %th Last Name
+          %th Username
+      %tbody
+        %tr
+          %td 1
+          %td Mark
+          %td Otto
+          %td @mdo
+        %tr
+          %td 2
+          %td Jacob
+          %td Thornton
+          %td @fat
+        %tr
+          %td 3
+          %td Larry
+          %td the Bird
+          %td @twitter
+
+
+.panel.panel-default.grid
+  .panel-heading
+    %i.icon-table.icon-large
+    Condensed Table
+  %table.table.table-condensed
+    %thead
+      %tr
+        %th #
+        %th First Name
+        %th Last Name
+        %th Username
+    %tbody
+      %tr
+        %td 1
+        %td Mark
+        %td Otto
+        %td @mdo
+      %tr
+        %td 2
+        %td Jacob
+        %td Thornton
+        %td @fat
+      %tr
+        %td 3
+        %td Larry
+        %td the Bird
+        %td @twitter

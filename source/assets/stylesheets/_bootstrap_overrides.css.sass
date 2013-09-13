@@ -1,0 +1,42 @@
+// Bootstrap overrides
+
+// Navbars
+.navbar-nav > li > .dropdown-menu // Add arrow and border radius from dropdowns
+  +border-radius(5px)
+  &:after
+    content: ''
+    display: inline-block
+    border-left: 6px solid transparent
+    border-right: 6px solid transparent
+    border-bottom: 6px solid $dropdown-bg
+    position: absolute
+    top: -6px
+    right: 20px
+
+//Panels
+.panel // Remove box shadow from panels
+  +box-shadow(none)
+  // Panel heading styles
+  .panel-heading
+    text-align: left
+    background-color: lighten($panel-heading-bg, 3)
+    color: $base-dark-color
+    i[class*='icon-']
+      margin-right: 5px
+  .panel-footer
+    background-color: lighten($panel-heading-bg, 3)
+    .pull-right
+      padding-top: 5px
+
+// Buttons
+.btn
+  padding: 6px 12px
+
+// Form elements
+.radio, .checkbox
+  margin-top: 0
+
+// Tables
+.table
+  @extend .table-striped
+  @extend .table-hover

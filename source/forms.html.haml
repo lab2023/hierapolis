@@ -1,0 +1,194 @@
+- page 'Forms', 'forms'
+
+.panel.panel-default
+  .panel-heading
+    %i.icon-edit.icon-large
+    Form Default
+  .panel-body
+
+    %form
+
+      %fieldset
+        %legend Default Inputs
+
+        .form-group
+          %label.control-label Text field
+          %input.form-control{placeholder: 'Enter username', type: 'text'}/
+
+        .form-group
+          %label.control-label Password field
+          %input.form-control{placeholder: 'Enter password', type: 'password'}/
+
+        .form-group
+          %label.control-label Input field with help
+          %input.form-control{placeholder: '.help-block'}/
+          %p.help-block Example block-level help text here.
+
+        .form-group
+          %label.control-label Disabled field
+          %input.form-control{placeholder: 'This is field is disabled!', disabled: true}/
+
+        .form-group
+          %label.control-label Tooltip field
+          %input.form-control{data: {toggle: 'tooltip'}, title: 'Input tips here', placeholder: 'This is field is disabled!'}/
+
+        .form-group
+          %label.control-label Textarea field
+          %textarea.form-control{rows: 4}
+
+        .form-group
+          %label.control-label File input
+          %input{type: 'file'}
+
+        .form-group
+          %label.control-label Large field
+          %input.form-control.input-lg{type: 'text', placeholder: '.input-lg'}/
+
+        .form-group
+          %label.control-label Small field
+          %input.form-control.input-sm{type: 'text', placeholder: '.input-sm'}/
+
+        .form-group.row
+          .col-lg-2
+            %label.control-label Column sizing
+            %input.form-control{type: 'text', placeholder: '.col-lg-2'}/
+          .col-lg-3
+            %label.control-label Column sizing
+            %input.form-control{type: 'text', placeholder: '.col-lg-3'}/
+          .col-lg-7
+            %label.control-label Column sizing
+            %input.form-control{type: 'text', placeholder: '.col-lg-7'}/
+
+      %fieldset
+        %legend Input Validation States
+
+        .form-group.has-warning
+          %label.control-label Input field with help
+          %input.form-control{placeholder: '.has-warning'}/
+          %p.help-block Example block-level help text here.
+
+        .form-group.has-error
+          %label.control-label Input field with help
+          %input.form-control{placeholder: '.has-error'}/
+          %p.help-block Example block-level help text here.
+
+        .form-group.has-success
+          %label.control-label Input field with help
+          %input.form-control{placeholder: '.has-success'}/
+          %p.help-block Example block-level help text here.
+
+      %fieldset
+        %legend Checkboxes and radios
+
+        .form-group
+          %label.control-label Checkbox
+          .checkbox
+            %input{type: 'checkbox', value: ''}/
+            Option one is this and that&mdash;be sure to include why it's great
+
+        .form-group
+          %label.control-label Inline checkbox
+          %br/
+          .checkbox-inline
+            %input{type: 'checkbox', value: ''}/
+            1
+          .checkbox-inline
+            %input{type: 'checkbox', value: ''}/
+            2
+          .checkbox-inline
+            %input{type: 'checkbox', value: ''}/
+            3
+
+        .form-group
+          %label.control-label Radio
+          .radio
+            %input{type: 'radio', name:'options_radio', value: 'option1', checked: true}
+            Option one is this and that&mdash;be sure to include why it's great
+
+            %br/
+
+            %input{type: 'radio', name:'options_radio', value: 'option2', checked: true}
+            Option two can be something else and selecting it will deselect option one
+
+      %fieldset
+        %legend Selects
+
+        .form-group
+          %label.control-label Single select
+          %select.form-control
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+
+        .form-group
+          %label.control-label Multiple select
+          %select.form-control{multiple: true}
+            %option 1
+            %option 2
+            %option 3
+            %option 4
+            %option 5
+
+      .form-actions
+        %button.btn.btn-default{:type => 'submit'} Submit
+        %a.btn{href: '#'} Cancel
+
+.panel.panel-default
+  .panel-heading
+    %i.icon-edit.icon-large
+    Form Horizontal
+  .panel-body
+
+    %form.form-horizontal
+
+      %fieldset
+        %legend Default inputs
+
+        .form-group
+          %label.col-lg-2.control-label Text field
+          .col-lg-10
+            %input.form-control{placeholder: 'Enter username', type: 'text'}/
+
+        .form-group
+          %label.col-lg-2.control-label Password field
+          .col-lg-10
+            %input.form-control{placeholder: 'Enter password', type: 'password'}/
+
+        .form-group
+          %label.col-lg-2.control-label Input field with help
+          .col-lg-10
+            %input.form-control{placeholder: '.help-block'}/
+            %p.help-block Example block-level help text here.%fieldset
+
+        %legend Validation inputs
+
+        .form-group.has-warning
+          %label.col-lg-2.control-label Text field
+          .col-lg-10
+            %input.form-control{placeholder: 'Enter username', type: 'text'}/
+
+        .form-group.has-error
+          %label.col-lg-2.control-label Password field
+          .col-lg-10
+            %input.form-control{placeholder: 'Enter password', type: 'password'}/
+
+        .form-group.has-success
+          %label.col-lg-2.control-label Input field with help
+          .col-lg-10
+            %input.form-control{placeholder: '.help-block'}/
+            %p.help-block Example block-level help text here.
+
+      .form-actions
+        %button.btn.btn-default{:type => 'submit'} Save
+        %a.btn{href: '#'} Cancel
+
+.panel.panel-default
+  .panel-heading
+    %i.icon-edit.icon-large
+    Knob Inputs
+  .panel-body.text-center
+    %input.knob{type: 'text', value: '75', data: {width: 150, height: 150}}/
+    %input.knob{type: 'text', value: '100', data: {fgColor: '#16a085', width: 150, height: 150}}/
+    %input.knob{type: 'text', value: '200', data: {fgColor: '#7f8c8d', width: 150, height: 150}}/
