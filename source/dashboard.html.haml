@@ -16,17 +16,17 @@
   .label.label-info
     Info
 
-.panel
+.panel.panel-default
   .panel-heading
     %i.icon-beer.icon-large
     Hierapolis Rocks!
-  .panel-tools
-    .btn-group
-      %a.btn{href: '#'}
-        %i.icon-refresh
-        Refresh statics
-      %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Toggle'}
-        %i.icon-chevron-down
+    .panel-tools
+      .btn-group
+        %a.btn{href: '#'}
+          %i.icon-refresh
+          Refresh statics
+        %a.btn{href: '#', data: {toggle: 'toolbar-tooltip'}, title: 'Toggle'}
+          %i.icon-chevron-down
   .panel-body
     .page-header
       %h4 System usage
@@ -37,11 +37,11 @@
     .page-header
       %h4 User statics
     .row.text-center
-      .col-3
+      .col-md-3
         %input.knob.second{'data-bgcolor' => '#d4ecfd', 'data-fgcolor' => '#30a1ec', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '50'}/
-      .col-3
+      .col-md-3
         %input.knob.second{'data-bgcolor' => '#c4e9aa', 'data-fgcolor' => '#8ac368', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '75'}/
-      .col-3
+      .col-md-3
         %input.knob.second{'data-bgcolor' => '#cef3f5', 'data-fgcolor' => '#5ba0a3', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '35'}/
-      .col-3
+      .col-md-3
         %input.knob.second{'data-bgcolor' => '#f8d2e0', 'data-fgcolor' => '#b85e80', 'data-inputcolor' => '#333', 'data-thickness' => '.3', 'data-width' => '140', 'data-height' => '140', :type => 'text', :value => '85'}/

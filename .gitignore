@@ -20,3 +20,5 @@ tmp
 _yardoc
 doc/
 *.psd
+
+build/

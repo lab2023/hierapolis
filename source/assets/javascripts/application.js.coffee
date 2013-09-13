@@ -14,9 +14,6 @@ $(document).ready ->
   ), ->
     $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut()
 
-  # Dock dropdown fix
-  $('#dock li.launcher').each ->
-    $(this).find('.dropdown-menu').css 'top', $(this).position().top + 33
 
   $('#toggle').click ->
     $('#dock .launcher a').toggle()

@@ -13,47 +13,20 @@
     top: -6px
     right: 20px
 
-// Panels
+//Panels
 .panel // Remove box shadow from panels
   +box-shadow(none)
-
   // Panel heading styles
   .panel-heading
+    text-align: left
+    background-color: lighten($panel-heading-bg, 3)
     color: $base-dark-color
     i[class*='icon-']
       margin-right: 5px
-  .panel-tools
-    float: right
-    margin-top: -48px
-    margin-right: -8px
-    .btn-group
-      margin-top: -6px
-    .btn-group, .label, .badge
-      float: right
-      display: inline-block
-    .btn
-      padding: 8px 6px
-      font-weight: 200
-      font-size: 1em
-      color: $base-dark-color
-      &:hover
-        color: $base-color
-      &:active, &:focus
-        color: darken($base-color, 10)
-        +box-shadow(none)
-      span.badge
-        font-size: .7em
-        padding: 2px 4px
-    .label, .badge
-      margin-right: 5px
-      margin-top: 4px
-      padding-bottom: 4px
-      font-weight: 200
-  .panel-body
-    &.no-padding
-      margin-left: -15px
-      margin-right: -15px
-      margin-top: -15px
+  .panel-footer
+    background-color: lighten($panel-heading-bg, 3)
+    .pull-right
+      padding-top: 5px
 
 // Buttons
 .btn
