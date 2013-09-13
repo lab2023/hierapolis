@@ -16,12 +16,17 @@
 //Panels
 .panel // Remove box shadow from panels
   +box-shadow(none)
-
   // Panel heading styles
   .panel-heading
+    text-align: left
+    background-color: lighten($panel-heading-bg, 3)
     color: $base-dark-color
     i[class*='icon-']
       margin-right: 5px
+  .panel-footer
+    background-color: lighten($panel-heading-bg, 3)
+    .pull-right
+      padding-top: 5px
 
 // Buttons
 .btn

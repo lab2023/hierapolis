@@ -63,48 +63,46 @@ form
 .text-center
   text-align: center
 
-// Grids
-.panel.grid
-  .panel-heading
-    text-align: left
-    background-color: lighten($panel-heading-bg, 3)
-
-    .panel-tools
+// Panels
+.panel
+  .panel-tools
+    float: right
+    margin-top: -4px
+    margin-right: -8px
+    .btn-group
+      margin-top: -6px
+    .btn-group, .label, .badge
       float: right
-      margin-top: -4px
-      margin-right: -8px
-      .btn-group
-        margin-top: -6px
-      .btn-group, .label, .badge
-        float: right
-        display: inline-block
-      .btn
-        padding: 8px 6px
-        font-weight: 200
-        font-size: 1em
-        color: $base-dark-color
-        &:hover
-          color: $base-color
-        &:active, &:focus
-          color: darken($base-color, 10)
-          +box-shadow(none)
-        span.badge
-          font-size: .7em
-          padding: 2px 4px
-      .label, .badge
-        margin-right: 5px
-        margin-top: 4px
-        padding-bottom: 4px
-        font-weight: 200
-  .panel-body
-    &.filters
-      background-color: lighten($panel-heading-bg, 5)
-      .input-group
-        input
-          height: 30px
-        button
-          height: 30px
-          padding: 0 10px
+      display: inline-block
+    .btn
+      padding: 8px 6px
+      font-weight: 200
+      font-size: 1em
+      color: $base-dark-color
+      &:hover
+        color: $base-color
+      &:active, &:focus
+        color: darken($base-color, 10)
+        +box-shadow(none)
+      span.badge
+        font-size: .7em
+        padding: 2px 4px
+    .label, .badge
+      margin-right: 5px
+      margin-top: 4px
+      padding-bottom: 4px
+      font-weight: 200
+
+// Grids
+.grid
+  .filters
+    background-color: lighten($panel-heading-bg, 5)
+    .input-group
+      input
+        height: 30px
+      button
+        height: 30px
+        padding: 0 10px
   table
     margin-bottom: 0
     th:first-child, td:first-child
@@ -123,11 +121,8 @@ form
         padding: 2px 6px
   .panel-footer
     padding: 10px 10px 5px 10px
-    background-color: lighten($panel-heading-bg, 3)
     .pagination
       margin: 0
-    .pull-right
-      padding-top: 5px
 
 
 #navbar
@@ -205,7 +200,7 @@ form
         text-align: left
         position: absolute
         margin-left: 85px
-        top: 80px
+        top: 8px
         > li > a
           padding: 5px 20px
         a, li.dropdown-header
@@ -241,7 +236,7 @@ form
           height: 10px
           background-color: white
           position: absolute
-          right: -5px
+          right: -6px
           margin-top: 22px
 
 #content
