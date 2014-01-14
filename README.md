@@ -27,6 +27,8 @@ TODO
 
 TODO
 
+* There is also [Rails Hierapolis Gem](https://github.com/kebab-project/hierapolis-rails) for Rails developer. 
+
 ## What Hierapolis included?
 
 * [Bootstrap 3](http://getbootstrap.com/)
