@@ -15,3 +15,4 @@ gem 'compass', '~> 0.12.2'
 
 # Bootstrap sass
 gem 'bootstrap-sass', '~> 3.0.3.0'
+gem 'middleman-gh-pages'
