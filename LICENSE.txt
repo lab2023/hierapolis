@@ -1,4 +1,4 @@
-Copyright (c) 2013 lab2023 - internet technologies
+Copyright (c) 2014 lab2023 - information technologies
 
 MIT License
 
