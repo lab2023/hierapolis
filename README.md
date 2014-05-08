@@ -51,6 +51,8 @@ Once you've made your great commits:
 
 ## Credits
 
+![lab2023](http://lab2023.com/assets/images/named-logo.png)
+
 Hierapolis is maintained and funded by [lab2023 - information technologies](http://lab2023.com/)
 
 Thank you to all the [contributors!](https://github.com/kebab-project/hierapolis/graphs/contributors)
