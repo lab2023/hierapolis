@@ -25,7 +25,21 @@ TODO
 
 ## Usage
 
-TODO
+For see in action
+
+1. `git clone git@github.com:lab2023/hierapolis.git`
+2. `bundle install`
+3. `middleman`
+4. Open `0.0.0.0:4567`
+
+Get html, css, js output
+
+1. `middleman build`
+2. `cd build` 
+
+You can see outputs in build folder.
+
+**NOTE**
 
 * There is also [Rails Hierapolis Gem](https://github.com/kebab-project/hierapolis-rails) for Rails developer.
 
