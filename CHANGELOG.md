@@ -1,5 +1,25 @@
 
 #### [Current]
+ * [03ca365](../../commit/03ca365) - __(Tayfun Ozis ERIKAN)__ #TB-40 Middleman updates and improvements - Middleman gems were updated - HAML layout structures were updated - Bootstrap-sass was updated - Middleman-deploy plugin was enabled and rakefile was removed - .gitignore file was updated
+ * [066dc2e](../../commit/066dc2e) - __(Muhammet Dilek)__ Merge pull request [#48](../../issues/48) from ds82/fix/middleman-sprockets
+
+lock version of middleman-sprockets to 3.3.2 due to a bug
+ * [62e8249](../../commit/62e8249) - __(Dennis Saenger)__ lock version of middleman-sprockets to 3.3.2 due to a bug
+
+see: https://github.com/middleman/middleman/issues/1265
+
+ * [7746060](../../commit/7746060) - __(Onur Ozgur OZKAN)__ Give more information about run and build middleman
+ * [d23d1f3](../../commit/d23d1f3) - __(Ahmet Sezgin Duran)__ LAB-31 #time 1m Add named logo
+ * [fabb176](../../commit/fabb176) - __(Ahmet Sezgin Duran)__ LAB-31 #time 2m Update README.md and license
+ * [5ba05d3](../../commit/5ba05d3) - __(Onur Ozgur OZKAN)__ Add rails hierapolis gem.
+ * [4a80ca9](../../commit/4a80ca9) - __(Muhammet DILEK)__ github pages settings
+ * [bb47ca7](../../commit/bb47ca7) - __(Tayfun zi ERKAN)__ [#45](../../issues/45) was done
+ * [a2ae457](../../commit/a2ae457) - __(Tayfun Ozis ERIKAN)__ [#42](../../issues/42) Bootstrap was updated.
+ * [a61f895](../../commit/a61f895) - __(Tayfun Ozis ERIKAN)__ [#41](../../issues/41) Middleman, bootstrap-sass were updated.
+ * [5fef629](../../commit/5fef629) - __(Tayfun Ozis ERIKAN)__ [#41](../../issues/41) Screenshots was added.
+
+#### 0.4.0
+ * [1791946](../../commit/1791946) - __(Tayfun Ozis ERIKAN)__ bump version 0.4.0
  * [ae6428e](../../commit/ae6428e) - __(Tayfun Ozis ERIKAN)__ 31 Add more content view helpers - Navbar variables were fixed - Panel tools was fixed - Dropdown launcher menu position was fixed
  * [371d9d1](../../commit/371d9d1) - __(Tayfun Ozis ERIKAN)__ 31 Add more content view helpers - Panel dimensions and colors was fixed - Font files was removed
  * [b6f0f0f](../../commit/b6f0f0f) - __(Tayfun Ozis ERIKAN)__ 31 Add more content view helpers - Toolbar yield content was added - Font-family was added to global variables

@@ -6,13 +6,42 @@ This is yet an other private admin template which base on Twitter Bootstrap 3 wi
 
 NOTE: Don't use this theme until v1.0.0
 
+## Screenshots
+
+### Login screen
+![hierapolis_login](https://f.cloud.github.com/assets/310691/1653859/8cc7597e-5b3e-11e3-9efa-40ce52c63f3f.png)
+### Forgot password
+![hierapolis_forgot_password](https://f.cloud.github.com/assets/310691/1653860/95295568-5b3e-11e3-827d-998a3ad93b8b.png)
+### Dashboard
+![hierapolis_dashboard](https://f.cloud.github.com/assets/310691/1653862/99fe359a-5b3e-11e3-99b0-2aefce46f99a.png)
+### Tables
+![hierapolis_tables](https://f.cloud.github.com/assets/310691/1653863/a58d5a8a-5b3e-11e3-9650-68617b2c7631.png)
+### Forms
+![hierapolis_forms](https://f.cloud.github.com/assets/310691/1653864/ac4d1720-5b3e-11e3-9465-18984b9f151b.png)
+
 ## Requirements
 
 TODO
 
 ## Usage
 
-TODO
+For see in action
+
+1. `git clone git@github.com:lab2023/hierapolis.git`
+2. `bundle install`
+3. `middleman`
+4. Open `0.0.0.0:4567`
+
+Get html, css, js output
+
+1. `middleman build`
+2. `cd build` 
+
+You can see outputs in build folder.
+
+**NOTE**
+
+* There is also [Rails Hierapolis Gem](https://github.com/kebab-project/hierapolis-rails) for Rails developer.
 
 ## What Hierapolis included?
 
@@ -36,7 +65,9 @@ Once you've made your great commits:
 
 ## Credits
 
-Hierapolis is maintained and funded by [lab2023 - internet technologies](http://lab2023.com/)
+![lab2023](http://lab2023.com/assets/images/named-logo.png)
+
+Hierapolis is maintained and funded by [lab2023 - information technologies](http://lab2023.com/)
 
 Thank you to all the [contributors!](https://github.com/kebab-project/hierapolis/graphs/contributors)
 
@@ -44,4 +75,4 @@ The names and logos for lab2023 are trademarks of lab2023, inc.
 
 ## License
 
-Copyright 2013 lab2023 – internet technologies
+Copyright 2014 lab2023 – information technologies
