@@ -42,7 +42,7 @@ configure :development do
 end
 
 # Pretty URLs
-activate :directory_indexes
+#activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
