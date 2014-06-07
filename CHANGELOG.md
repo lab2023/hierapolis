@@ -1,5 +1,12 @@
 
 #### [Current]
+
+
+#### 0.5.1
+ * [ee11dcc](../../commit/ee11dcc) - __(Tayfun Ozis ERIKAN)__ Directory indexes was disabled
+
+#### 0.5.0
+ * [e8c7f44](../../commit/e8c7f44) - __(Tayfun Ozis ERIKAN)__ Bump version 0.5.0
  * [03ca365](../../commit/03ca365) - __(Tayfun Ozis ERIKAN)__ #TB-40 Middleman updates and improvements - Middleman gems were updated - HAML layout structures were updated - Bootstrap-sass was updated - Middleman-deploy plugin was enabled and rakefile was removed - .gitignore file was updated
  * [066dc2e](../../commit/066dc2e) - __(Muhammet Dilek)__ Merge pull request [#48](../../issues/48) from ds82/fix/middleman-sprockets
 
@@ -8,10 +15,10 @@ lock version of middleman-sprockets to 3.3.2 due to a bug
 
 see: https://github.com/middleman/middleman/issues/1265
 
- * [7746060](../../commit/7746060) - __(Onur Ozgur OZKAN)__ Give more information about run and build middleman
+ * [7746060](../../commit/7746060) - __(Onur zgr ZKAN)__ Give more information about run and build middleman
  * [d23d1f3](../../commit/d23d1f3) - __(Ahmet Sezgin Duran)__ LAB-31 #time 1m Add named logo
  * [fabb176](../../commit/fabb176) - __(Ahmet Sezgin Duran)__ LAB-31 #time 2m Update README.md and license
- * [5ba05d3](../../commit/5ba05d3) - __(Onur Ozgur OZKAN)__ Add rails hierapolis gem.
+ * [5ba05d3](../../commit/5ba05d3) - __(Onur zgr ZKAN)__ Add rails hierapolis gem.
  * [4a80ca9](../../commit/4a80ca9) - __(Muhammet DILEK)__ github pages settings
  * [bb47ca7](../../commit/bb47ca7) - __(Tayfun zi ERKAN)__ [#45](../../issues/45) was done
  * [a2ae457](../../commit/a2ae457) - __(Tayfun Ozis ERIKAN)__ [#42](../../issues/42) Bootstrap was updated.
