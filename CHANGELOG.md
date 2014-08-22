@@ -1,8 +1,6 @@
 
 #### [Current]
-
-
-#### 0.5.1
+ * [1a07395](../../commit/1a07395) - __(Tayfun Ozis ERIKAN)__ Bump version 0.5.2
  * [ee11dcc](../../commit/ee11dcc) - __(Tayfun Ozis ERIKAN)__ Directory indexes was disabled
 
 #### 0.5.0
