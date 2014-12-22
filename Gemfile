@@ -23,4 +23,4 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw]
 gem 'compass', '~> 0.12.6'
 
 # Twitter Bootstrap
-gem 'bootstrap-sass', '~> 3.1.1.1'
+gem 'bootstrap-sass', '~> 3.3.1'
