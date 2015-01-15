@@ -41,7 +41,7 @@ You can see outputs in build folder.
 
 **NOTE**
 
-* There is also [Rails Hierapolis Gem](https://github.com/kebab-project/hierapolis-rails) for Rails developer.
+* There is also [Rails Hierapolis Gem](../../../hierapolis-rails) for Rails developer.
 
 ## What Hierapolis included?
 
@@ -69,7 +69,7 @@ Once you've made your great commits:
 
 Hierapolis is maintained and funded by [lab2023 - information technologies](http://lab2023.com/)
 
-Thank you to all the [contributors!](https://github.com/kebab-project/hierapolis/graphs/contributors)
+Thank you to all the [contributors!](../../graphs/contributors)
 
 The names and logos for lab2023 are trademarks of lab2023, inc.
 
