@@ -1,6 +1,6 @@
 # Hierapolis
 
-This is yet an other private admin template which base on Twitter Bootstrap 3 with Sass and Compass.
+This is yet another private admin template which is based on Twitter Bootstrap 3 with Sass and Compass.
 
 **Hierapolis** Hierapolis (Greek: Ἱεράπολις 'sacred city') was an ancient Greco-Roman city in Phrygia located on hot springs in southwest Anatolia. Its ruins are adjacent to modern Pamukkale, Turkey.
 
@@ -25,29 +25,29 @@ TODO
 
 ## Usage
 
-For see in action
+To see the template in action;
 
 1. `git clone git@github.com:lab2023/hierapolis.git`
 2. `bundle install`
 3. `middleman`
-4. Open `0.0.0.0:4567`
+4. Navigate to `0.0.0.0:4567` in your web browser.
 
-Get html, css, js output
+To output the HTML, CSS and JavaScript for the template, you can run;
 
 1. `middleman build`
 2. `cd build` 
 
-You can see outputs in build folder.
+You'll find the output within the build folder.
 
 **NOTE**
 
-* There is also [Rails Hierapolis Gem](../../../hierapolis-rails) for Rails developer.
+* For Rails developers, check out the [Rails Hierapolis Gem](../../../hierapolis-rails) to integrate this template with your Rails project.
 
-## What Hierapolis included?
+## What does Hierapolis include?
 
 * [Bootstrap 3](http://getbootstrap.com/)
 
-## Bugs and  Feedback
+## Bugs and Feedback
 
 If you discover any bugs or want to drop a line, feel free to create an issue on GitHub.
 
