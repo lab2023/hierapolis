@@ -8,7 +8,8 @@
 /.bundle
 
 # Ignore the build directory
-/build
+# Disable for non-ROR users
+# /build
 
 # Ignore caches
 /.sass-cache

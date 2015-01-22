@@ -11,6 +11,13 @@
     = stylesheet_link_tag 'application',
                           '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css'
 
+    //modernizr must be on head
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
+
+    //CSS3 media query work on IE9
+    /[if lt IE 9]
+      =javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'
+
     = favicon_tag 'favicon.ico'
 
     = yield_content :head
