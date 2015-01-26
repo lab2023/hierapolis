@@ -2,16 +2,16 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem 'middleman', '~>3.3.3'
+gem 'middleman', '~>3.3.7'
 
 # Live-reloading plugin
-gem 'middleman-livereload', '~> 3.1.0'
+gem 'middleman-livereload', '~> 3.4.2'
 
 # Middleman-sprockets
-gem 'middleman-sprockets', '3.3.2'
+gem 'middleman-sprockets', '3.4.1'
 
 # Middleman-deploy
-gem 'middleman-deploy', '~> 0.2.4'
+gem 'middleman-deploy', '~> 1.0.0'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
@@ -20,7 +20,7 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 # Compass
-gem 'compass', '~> 0.12.6'
+gem 'compass', '~> 1.0.3'
 
 # Twitter Bootstrap
-gem 'bootstrap-sass', '~> 3.1.1.1'
+gem 'bootstrap-sass', '~> 3.3.3'

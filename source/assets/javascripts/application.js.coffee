@@ -1,5 +1,6 @@
 #= require bootstrap
 #= require_tree
+####if modernizr added dont need html5shiv (http://modernizr.com/docs)
 
 $(document).ready ->
 

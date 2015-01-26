@@ -48,7 +48,7 @@ body.main
   //+background-image(linear-gradient(left, $body-bg-primary, $body-bg-secondary))
 
 .sprite-image
-  background-image: url(../images/sprite.png)
+  background-image: image_url('sprite.png')
 
 form
   .form-actions
@@ -87,7 +87,8 @@ form
       span.badge
         font-size: .7em
         padding: 2px 4px
-    .label, .badge
+    .label,
+    .badge
       margin-right: 5px
       margin-top: 4px
       padding-bottom: 4px
@@ -152,7 +153,8 @@ form
   +box-shadow(0 0 0 2px $box-shadow-color)
   overflow: hidden
 
-#content, #sidebar
+#content,
+#sidebar
   position: absolute
   top: 0
   bottom: 0
@@ -289,9 +291,9 @@ form
   @extend .sprite-image
   position: absolute
   bottom: 5px
-  background-position: 0 0
   width: 12px
   height: 24px
+  margin-left: 33px
+  background-position: 0 0
   background-size: 100px
   background-repeat: no-repeat
-  margin-left: 33px
