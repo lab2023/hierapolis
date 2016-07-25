@@ -53,6 +53,9 @@ If you discover any bugs or want to drop a line, feel free to create an issue on
 
 http://github.com/lab2023/hierapolis/issues
 
+# Download Plain HTML Version
+![Download ZIP](https://github.com/lab2023/hierapolis/archive/gh-pages.zip)
+
 ## Contributing
 
 Once you've made your great commits:
